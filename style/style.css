@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    font-family:  sans-serif;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 10px;
+    height:auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+header .link-list {
+    display: flex;
+    margin-right: 100px;
+    gap: 30px;
+    list-style: none;
+}
+header .link-list li a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: black;
+}
+header .link-list li{
+    position: relative;
+}
+header .link-list li a:hover{
+    color: aquamarine;
+    font-weight: 400;
+}
+header .link-list li a:hover,
+header .link-list li a.active{
+    color: coral;
+}
+header .link-list li a.active::after,
+header .link-list li a:hover::after{
+    content: "";
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    background-color: aquamarine;
+    bottom: 5px;
+    left: 2px;
+}
+/* end-header-style */
+main{
+    
+   
+}
+main .banner-page{
+    background-image: url('img/hero4.png');
+    background-repeat: no;
+    background-size: cover;
+    background-position: top 25% right 0;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    
+   
+}
+.text{
+   position: absolute;
+   left: 90px;
+   top: 200px;
+   
+}
+.text h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.text h5,p{
+    margin-bottom: 10px;
+}
+.text #text-color{
+    color: brown;
+}
+.text #btn{
+    padding: 14px 80px 14px 65px;
+    border: 0;
+    border-radius: 5px;
+    background-image: url('img/button.png');
+    background-color: transparent;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+main .cards-list{
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    gap: 10px;
+    margin-top: 30px;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+main .cards-list .card img{
+    margin-bottom: 20px;
+}
+main .cards-list .card{
+    display: grid;
+    grid-template-rows: repeat(2 , auto);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cce7d0;
+    padding: 10px 10px;
+}
+ 
+main .cards-list .card h6{
+    display: flex;
+    margin-left: 30px;
+    background-color: coral;
+    color: white;
+    width: 100px;
+    justify-content: center;
+    padding: 3px 3px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+main #title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 600;
+}
+main #title-2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+main .summer-cards{
+    display: grid;
+    width: 89%;
+    gap: 15px;
+    margin: auto;
+    grid-template-columns: repeat(4,1fr);
+
+}
+main .summer-cards .summer-collection img{
+    padding: 20px;
+    border-radius: 40px;
+}
+
+main .summer-cards .summer-collection{
+    width: 280px;
+    height: 390px;
+}
+main .summer-cards .summer-collection .star{
+    margin-left: 21px;
+}
+
+main .summer-cards .summer-collection .star span{
+    color: gold;
+    font-size: 17px;
+}
+
+main .summer-cards .summer-collection .price{
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .summer-cards .summer-collection p{
+    margin-left: 25px;
+    color: aquamarine;
+}
+main .summer-cards .summer-collection h4{
+    margin-left: 25px;
+    font-weight: 600;
+    color: darkorange;
+}
+main .summer-cards .summer-collection .sopping-cart{
+    margin-right: 20px;
+    color: lightgreen;
+    cursor: pointer;
+   
+    
+}
+main .foot-banner{
+    background-image: url('img/banner/b2.jpg');
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .foot-banner h2{
+    font-size: 30px;
+    font-weight: 600;
+}
+main .foot-banner h2 span{
+    color: red;
+}
+main .foot-banner .explore-btn{
+    background-color: white;
+    color:black;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+main .foot-banner .explore-btn:hover{
+    background-color: green;
+    transition: 0.3ms ease;
+    color: azure;
+}
+main .summer-shirt{
+    text-align: center;
+}
+
+/* crazy-banner */
+main .crazy-banner{
+    background-image: url('img/banner/b17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+main .crazy-banner-2{
+    background-image: url('img/banner/b10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+main .learn-btn{
+    border: 1px solid white;
+    padding: 7px 9px;
+    width: 150px;
+    color: white;
+
+}
+main .learn-btn:hover{
+   
+}
+main .crazy-banner-list{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(2 ,1fr);
+    gap: -100px;
+}
+main .crazy-banner-list .crazy-banner p,h1,.learn-btn{
+    margin-left: 20px;
+}
+
+/* crazy-banner-end */
+
+main .model-banner{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+   
+}
+main .model{
+    background-image: url('img/banner/b7.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+   
+}
+main .model-banner .model-4{
+    background-image: url('img/banner/b4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 230px;
+    
+}
+main .model-banner .model-18{
+    background-image: url('img/banner/b18.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 230px;
+    
+}
+main .footer{
+    background-color: rosybrown;
+    height: 200px;
+    position: relative;
+   
+}
+main .footer .text-title{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+}
+main .footer .text-title-2{
+    position: absolute;
+    left: 50px;
+    top: 90px;
+    font-size: 12px;
+    
+}
+main .footer .text-title-2 span{
+    color: chocolate;
+}
+main .sing-up{
+    position: absolute;
+    left: 1030px;
+    top: 60px;
+}
+main .sing-up .input-field{
+    width: 300px;
+    padding: 7px 10px;
+    border-radius: 4px;
+
+}
+main .sing-up .btn{
+    background-color: rgb(83, 130, 83);
+    padding: 8px 20px;
+    border-radius: 2px;
+    color: white;
+    font-size: 12px;
+}
+
+/* responsive-area-start */
+
+    @media (max-width:799px){
+        header .link-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 5px;
+            margin-right: 0;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 300px;
+        }
+        main .banner-page{
+            width: auto;
+        }
+        
+    }
+
+/* responsive-area-end */
